@@ -1,0 +1,2 @@
+# StitchIt
+A Group Project
