@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(#eee, #f4e3ff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+        display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 30px;
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      height: 60px;
+    }
+
+    nav {
+      display: flex;
+      gap: 12px;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 6px 10px;
+      color: #444;
+      font-weight: 500;
+      font-size: 14px;
+      border-radius: 20px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background:#f5c4e4;
+    }
+
+    nav a.active {
+  background: #f5c4e4;
+}
+
+
+.logo img {
+    height: 38px;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #f5c4e4b3;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #2d0e44;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffdaf2;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #986dab;
+}
+
+th {
+    background-color: #ffe5ec;
+    color: #444;
+}
+
+.remove-btn {
+    background-color: #ff6b81;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #d6336c;
+}
+
+.total {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.checkout-btn {
+    display: block;
+    margin-left: auto;
+    background-color: rgba(234, 130, 215, 0.637);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: #5d268deb;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
